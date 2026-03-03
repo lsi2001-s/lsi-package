@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const cors = require('cors'); // CORS 패키지 불러오기
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 // CORS 설정 (프론트엔드와 백엔드의 도메인/포트가 다를 때 발생하는 오류 해결)
 app.use(cors());
